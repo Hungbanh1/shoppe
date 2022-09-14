@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="public/css/reset.css">
+    <link rel="stylesheet" href="public/css/reset1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="public/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="public/owlcarousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="public/font/fontawesome/css/all.css">
+    <link rel="stylesheet" href="public/font/fontawesome.min.css">
+    <script src="public/js/jquery-3.6.0.min.js"></script>
+    <script src="public/owlcarousel/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="public/font/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="public/css/style-lien-he.css">
+    <!-- <link rel="stylesheet" href=""> -->
+    <script src="public/js/main.js"></script>
+    <script src="public/js/alertify.min.js" type="text/javascript"></script>
+    <script src="public/js/alertify.js" type="text/javascript"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css" />
+    <!-- Default theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css" />
+    <!-- Semantic UI theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/semantic.min.css" />
+    <!-- Bootstrap theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.min.css" />
+
+
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .main-content {
+            background: url('public/images/bg-shoppe.png');
+            background-size: cover;
+            height: 600px;
+            width: 1040px;
+            margin: 0px auto;
+            background-repeat: no-repeat;
+            background-position: center center;
+            /* background-position-y: 50%; */
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .mar-0 {
+            margin-top: 24px;
+        }
+        
+        #email_error,
+        #password_error {
+            color: #ee4d2d;
+            font-size: 14px;
+        }
+    </style>
+
+
+
+
+
+    <div id="wrapper">
+        <div class="main-wp-content">
+            <div class="main-heading">
+                <div class="heading-lien-he">
+                    <div class="img-shoppe-lien-he">
+                        <a href="index.html"><img src="public/images/logo1.png" width="170px" height="50px" alt=""></a>
+                    </div>
+                    <div class="h1-heading-lien-he">
+
+                        <h>Đăng Nhập</h>
+                    </div>
+                </div>
+                <div class="helper-shoppe">
+                    <a href="">Cần trợ giúp ?</a>
+                </div>
+            </div>
+            <div class="main-form-login">
+                <div class="main-content">
+                    <div class="form-main-content">
+                        <!-- <form id="form-1" action="" name="form" method="Post">/ -->
+                        <div class="heading-form-login">
+                            <h1>Đăng Nhập</h1>
+                        </div>
+                        <div class="main-form">
+                            <input type="text" name="email" id="email" autofocus class="form-input" placeholder="Email/Số điện thoại/Tên đăng nhập">
+                            <span id="email_error"></span>
+                            <input type="password" name="password" class="form-input mar-0" id="password" placeholder="Mật khẩu">
+                            <span id="password_error"></span>
+
+
+                            <div class="footer-form-login">
+                                <a class="forgot-pass fl-grow" href="#">Quên mật khẩu?</a>
+                                <a class="login-for-SMS" href="#">Đăng nhập với SMS</a>
+                            </div>
+                            <button onclick="return validate()" class="form-login">Đăng nhập</button>
+                            <!-- </form> -->
+                            <div class="or-form-login text-center">
+                                <span class="or">Hoặc</span>
+                            </div>
+
+                            <div class="btn-all">
+                                <div class="btn-face ">
+                                    <button class="fb"><i id="facebook" class="fab fa-facebook"></i><span>Facebook</span></button>
+                                </div>
+                                <div class="btn-gg ">
+                                    <button class="gg"> <img class="bg-white" src="public/images/google1.png" width="35px" height="35px" alt=""> Google</button>
+                                </div>
+                                <div class="btn-apple">
+                                    <button class="apple"><i id="apple" class="fab fa-apple"></i>Apple</button>
+                                </div>
+                            </div>
+                            <div class="you-know-shoppe">
+                                <span class="text-muted">Bạn mới biết đến Shopee? 
+                                    </span><a href="">Đăng kí</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="main-body-about-shoppe">
+                <div class="body-shoppe-about">
+                    <div class="cus-care">
+                        <div class="heading-cus-care">
+                            <h1>CHĂM SÓC KHÁCH HÀNG</h1>
+                        </div>
+                        <div class="main-cus-care">
+                            <ul>
+                                <li>
+                                    <a href="">Trung Tâm Trợ Giúp</a>
+                                </li>
+                                <li>
+                                    <a href="">Shopee Blog</a>
+                                </li>
+                                <li>
+                                    <a href="">Shopee Mall</a>
+                                </li>
+                                <li>
+                                    <a href="">Hướng Dẫn Mua Hàng</a>
+                                </li>
+                                <li>
+                                    <a href="">Hướng Dẫn Bán Hàng</a>
+                                </li>
+                                <li>
+                                    <a href="">Thanh Toán</a>
+                                </li>
+                                <li>
+                                    <a href="">Shopee Xu</a>
+                                </li>
+                                <li>
+                                    <a href="">Vận Chuyển</a>
+                                </li>
+                                <li>
+                                    <a href="">Trả Hàng & Hoàn Tiền</a>
+                                </li>
+                                <li>
+                                    <a href="">Chăm Sóc Khách Hàng</a>
+                                </li>
+                                <li>
+                                    <a href="">Chính Sách Bảo Hành</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="about-shoppe">
+                        <div class="heading-about-shoppe">
+                            <h1>VỀ SHOPEE</h1>
+                        </div>
+                        <div class="main-about-shoppe">
+                            <ul>
+                                <li>
+                                    <a href="">Giới Thiệu Về Shopee Việt Nam</a>
+                                </li>
+                                <li>
+                                    <a href="">Tuyển Dụng</a>
+                                </li>
+                                <li>
+                                    <a href="">Điều Khoản Shopee</a>
+                                </li>
+                                <li>
+                                    <a href="">Chính Sách Bảo Mật</a>
+                                </li>
+                                <li>
+                                    <a href="">Chính Hãng</a>
+                                </li>
+                                <li>
+                                    <a href="">Kênh Người Bán</a>
+                                </li>
+                                <li>
+                                    <a href="">Flash Sales</a>
+                                </li>
+                                <li>
+                                    <a href="">Chương Trình Tiếp Thị Liên Kết Shopee</a>
+                                </li>
+                                <li>
+                                    <a href="">Liên Hệ Với Truyền Thông</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="shoppe-pay">
+                        <div class="heading-shoppe-pay">
+                            <h1>Thanh toán</h1>
+                        </div>
+                        <div class="main-shoppe-pay">
+                            <ul>
+                                <li>
+                                    <div class="logo-shoppe mr-5">
+                                        <img src="public/images/visa.png" width="55px" height="18px" alt="">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="logo-shoppe">
+                                        <img src="public/images/mastercard.png" width="55px" height="29px" alt="">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="logo-shoppe">
+                                        <img src="public/images/jcb.jpg" width="55px" height="23px" alt="">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="logo-shoppe pt-6">
+                                        <img src="public/images/tragop.png" width="55px" height="23px" alt="">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="logo-shoppe pt-6">
+                                        <img src="public/images/logo-shoppe-pay.png" width="70px" height="30px" alt="">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="logo-shoppe">
+                                        <img src="public/images/logo-code.jpg" width="55px" height="50px" alt="">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="heading-ship-shoppe">
+                            <h1>Đơn vị vận chuyển</h1>
+                        </div>
+                        <div class="main-shoppe-pay">
+                            <ul>
+                                <li>
+                                    <div class="logo-shoppe mr-5">
+                                        <img src="public/images/ship-shoppe.png" width="55px" height="18px" alt="">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="logo-shoppe">
+                                        <img src="public/images/ship-vietnam-post.png" width="55px" height="29px" alt="">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="logo-shoppe">
+                                        <img src="public/images/ship-viettelpost.png" width="55px" height="23px" alt="">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="logo-shoppe pt-6">
+                                        <img src="public/images/mastercard.png" width="55px" height="29px" alt="">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="logo-shoppe pt-6">
+                                        <img src="public/images/logo-shoppe-pay.png" width="70px" height="30px" alt="">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="logo-shoppe">
+                                        <img src="public/images/tragop.png" width="55px" height="23px" alt="">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="follow-shoppe">
+                        <div class="heading-follow-shoppe">
+                            <h1>THEO DÕI CHÚNG TÔI TRÊN</h1>
+                        </div>
+                        <div class="main-follow-shoppe">
+                            <ul>
+                                <li><i class="fab fa-facebook"></i><a href=""> Facebook</a></li>
+                                <li><i class="fab fa-instagram"></i><a href=""> Instagram</a></li>
+                                <li><i class="fab fa-linkedin-in"></i><a href=""> Linkedln</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="app-shoppe">
+                        <div class="heading-app-shoppe">
+                            <h1>TẢI ỨNG DỤNG SHOPEE NGAY THÔI </h1>
+
+                        </div>
+                        <div class="main-app-shoppe">
+                            <ul>
+                                <li>
+                                    <a href=""><img src="public/images/apple-icon.png" width="80px" height="20px" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="public/images/gg-icon.png" width="80px" height="20px" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="public/images/galery-icon.png" width="80px" height="20px" alt=""></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="footer">
+            <div class="wp-footer">
+                <div class="main-footer">
+                    <div class="address w-300">
+                        <div class="heading-footer">
+                            <h1>ĐỊA CHỈ</h1>
+                        </div>
+                        <div class="main-content-footer">
+                            <p> <i class="fas fa-map-marker-alt"></i> 106 - Thủ Đức - Hồ Chí Minh</p>
+                            <p><i class="fas fa-phone-alt"></i> 0979.468.095</p>
+                            <p<i class="far fa-envelope">
+                                </i> hungbg.dev1@gmail.com</p>
+                                <p></p>
+                        </div>
+
+                    </div>
+                    <div class="introduce  w-300">
+                        <div class="heading-footer">
+                            <h1>GIỚI THIỆU</h1>
+                        </div>
+                        <div class="main-content-footer">
+                            <p><a href="#" class="f8f9">Về chúng tôi</a></p>
+                            <p><a href="#" class="f8f9">Cách đặt hàng</a></p>
+                            <p><a href="#" class="f8f9">Kiểm tra đơn hàng</a></p>
+                            <p><a href="#" class="f8f9">Hỗ trợ</a></p>
+
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="catalog  w-300">
+                        <div class="heading-footer">
+                            <h1>DANH MỤC</h1>
+                        </div>
+                        <div class="main-content-footer">
+                            <p><a href="#" class="f8f9">Điện thoại</a></p>
+                            <p><a href="#" class="f8f9">Giày thể thao</a></p>
+                            <p><a href="#" class="f8f9">Kính mắt </a></p>
+                            <p><a href="#" class="f8f9">Túi xách</a></p>
+                        </div>
+
+                    </div>
+                    <div class="social  w-300">
+                        <div class="heading-footer">
+                            <h1>SOCIAL</h1>
+                        </div>
+                        <div class="main-content-footer">
+                            <p>
+                                <a href="https://www.google.com/intl/vi/gmail/about/" class="f8f9"> <i class="far fa-envelope"></i> Gmail</a>
+                            </p>
+                            <p><a href="http://hungbanh.unitopcv.com/" class="f8f9"><i class="fas fa-browser"></i>
+                                    Website</a></p>
+                            <p><a href="https://www.facebook.com/" class="f8f9"><i class="fab fa-facebook"></i> Facebook </a></p>
+                            <p>
+                                <a href="https://www.youtube.com/?hl=vi" class="f8f9"> <i class="fab fa-youtube"></i>Youtube</a>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="foot-footer bg-danger">
+            <div class="container">
+                <i class="far fa-copyright text-light"></i>
+                <span>2019 - 2025 HUNGBANH ACADEMY - HUNGBANH.VN</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>
